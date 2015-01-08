@@ -30,8 +30,21 @@ class ViewController: UIViewController {
         let dogYearsConversion = 7
         var dogYearsInteger:Int = humanyearsTextField.text.toInt()! * dogYearsConversion
         dogYearsLabel.text = "\(dogYearsInteger)" + " dog years"
+        humanyearsTextField.text = ""
         humanyearsTextField.resignFirstResponder()
     }
 
+    @IBAction func onNewConvertDogYearsPress(sender: UIButton) {
+        let input = Double((humanyearsTextField.text as NSString).doubleValue)
+        var realDogYearsConversion:Double
+        if input <= 2 {
+            realDogYearsConversion = input * 10.5
+        } else {
+            realDogYearsConversion = (10.5 * 2) + ((input-2)*4.0)
+        }
+        dogYearsLabel.text = "\(realDogYearsConversion)" + " dog years"
+        humanyearsTextField.text = ""
+        humanyearsTextField.resignFirstResponder()
+    }
 }
 

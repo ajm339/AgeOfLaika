@@ -45,16 +45,30 @@
                                     <rect key="frame" x="0.0" y="277" width="400" height="323"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5iE-7e-BDm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="New Conversion to Dog Years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="202" width="216" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onNewConvertDogYearsPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1E5-7L-B5L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Mc4-gN-I3u"/>
+                                <exclude reference="5iE-7e-BDm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Mc4-gN-I3u"/>
+                                <include reference="5iE-7e-BDm"/>
                             </mask>
                         </variation>
                     </view>
